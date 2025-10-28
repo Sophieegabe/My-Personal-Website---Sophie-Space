@@ -1,0 +1,628 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  cursor: url(https://ani.cursors-4u.net/symbols/sym-8/sym759.ani),
+    url(https://ani.cursors-4u.net/symbols/sym-8/sym759.png), auto !important;
+}
+
+/* BODY */
+body {
+  background-image: url(images/bodybg.png);
+  background-size: 250px;
+  background-position: 0% 80%;
+  background-attachment: fixed;
+  background-color: #f6eee8;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.header-img-container {
+  position: relative;
+  width: 1200px;
+  height: 280px;
+  background-color: rgba(255, 222, 243, 0.8);
+  border: 3px solid #f499c2;
+  border-bottom: none;
+}
+
+.header-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+nav {
+  background-color: #de4793;
+  border: 3px solid #f499c2;
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 1200px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  padding-left: 3rem;
+  gap: 4rem;
+  font-family: "Princess Sofia", cursive;
+  font-size: 1.5rem;
+  color: white;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+.nav-list li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+
+.nav-list a:hover {
+  color: #4b0a2a;
+}
+
+/* MOVING TEXT */
+.ticker-wrapper {
+  width: 1200px;
+  overflow: hidden;
+  border: 2px solid #de4793;
+  padding: 5px 0;
+  background-color: #ffffffd3;
+  margin: 20px auto;
+}
+
+.ticker {
+  display: inline-block;
+  white-space: nowrap;
+  padding-left: 1200px;
+  animation: scroll 15s linear infinite;
+  font-family: "Comic Sans MS", cursive;
+  font-size: 1rem;
+  color: #de4793;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* MAIN CONTENT */
+.main-content {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 1.5rem auto;
+}
+
+/* LEFT + RIGHT WINDOWS */
+.left-windows {
+  flex: 2.2;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.right-windows {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* WINDOW STYLES */
+.big-windows,
+.small-window {
+  background-image: url(images/sectionsbg.jpg);
+  background-color: #ffe6f0;
+  padding: 0.9rem;
+  border: 3px solid #f499c2;
+}
+.big-windows {
+  width: 862px;
+}
+.section-title-container {
+  background-color: white;
+  border: 3px solid #de4793;
+  border-radius: 10px 10px 0 0;
+  padding: 0.3rem;
+}
+
+h2 {
+  font-size: 1.3rem;
+  text-align: center;
+  font-family: "Potta One", cursive;
+  color: #de4793;
+}
+
+.content-container {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 3px solid #de4793;
+  border-top: none;
+  padding: 1rem;
+}
+
+/* ABOUT ME SECTION */
+p {
+  font-family: "Comic Sans MS", cursive;
+  color: #de4793;
+  font-size: 1.1rem;
+}
+
+.favicons {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.bottom-about-section p {
+  padding: 0 1rem 0 1.5rem;
+}
+
+.top-about-section {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.image-side {
+  flex: 1.5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#my-dancing-video {
+  width: 100%;
+  height: 240px;
+  max-width: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.text-side {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.intro-texts p {
+  font-family: "Comic Sans MS";
+  color: #de4793;
+}
+
+.bottom-about-section {
+  margin-top: 1rem;
+}
+
+.flower-divider {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.flower-divider img {
+  height: 30px;
+  display: inline-block;
+}
+
+/* BLINKIES GRID */
+.blinkies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  justify-items: center;
+}
+
+.blinkies-grid img {
+  width: 250px;
+  height: auto;
+}
+
+/* IMAGE FRAME */
+#freedom-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 3px solid #de4793;
+  border-radius: 10px;
+}
+
+/* CURRENTS */
+.currents-list {
+  font-family: "Comic Sans MS", cursive;
+  color: #de4793;
+  font-size: 1.1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.currents-list li {
+  display: flex;
+  gap: 20px;
+}
+
+.currents-favicons {
+  width: 25px;
+  height: 25px;
+}
+
+a {
+  color: #de4793;
+}
+
+a:visited {
+  color: #de4793;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8a0045;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+/* HOME PAGE */
+.news-favicons {
+  width: 40px;
+  height: 40px;
+}
+
+#octopus-img {
+  height: 180px;
+  width: 220px;
+  object-fit: cover;
+  margin-top: 10px;
+}
+.bow-divider {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -50px;
+  z-index: 10;
+  position: relative;
+}
+#text-side-home {
+  flex: 1.5;
+}
+#image-side-home {
+  flex: 0.5;
+}
+#bow-divider-1 {
+  margin-right: -35px;
+}
+
+#bow-divider-3 {
+  margin-left: -35px;
+}
+
+/* STAMPS */
+.stamps-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  background-color: #ffdef3;
+  border-top: 3px solid #de4793;
+  border-bottom: 3px solid #de4793;
+}
+
+.stamps-track {
+  display: flex;
+  width: max-content;
+  animation: scrollStamps 20s linear infinite;
+}
+
+.stamp {
+  width: 120px;
+  margin-right: 0px;
+}
+
+/* scroll animation */
+@keyframes scrollStamps {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.sparkly-wrapper {
+  background-image: url(images/pink-sparkles-bg.gif);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+#todays-menu-item {
+  width: 105px;
+}
+
+/* BLOG POSTS PAGE */
+#blog-page {
+  margin-top: 50px;
+}
+#my-character-blog-page {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 3px solid #de4793;
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(255, 255, 255, 0.813);
+}
+
+#blog-page-description-wrapper {
+  border: 3px solid #de4793;
+  border-radius: 10px;
+  padding: 30px 20px;
+}
+#blog-page-description-wrapper p {
+  font-size: 1.2rem;
+}
+
+.home-button-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+  width: 80px;
+  height: 50px;
+  background-color: #de4793;
+}
+.home-button-wrapper p {
+  font-family: "Princess Sofia";
+  font-size: 1.5rem;
+  color: white;
+}
+.home-button-wrapper p:hover {
+  color: #4b0a2a;
+}
+
+.blog-post-snippets {
+  width: 100%;
+  object-fit: cover;
+  border: 3px solid #de4793;
+  background-color: rgb(255, 255, 255);
+}
+
+#blog-page-big-window {
+  background-color: rgba(255, 255, 255, 0.726);
+  background-image: none;
+  border-top: none;
+  height: 100%;
+}
+
+.window-header {
+  width: 100%;
+}
+
+#blog-page .left-windows {
+  gap: 0;
+}
+
+.blog-post {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #ffffff;
+  border: 3px solid #f499c2;
+  padding: 20px;
+  margin-bottom: 25px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(222, 71, 147, 0.2);
+}
+
+.blog-image {
+  width: 300px;
+  height: 170px;
+  object-fit: cover;
+  border: 2px solid #de4793;
+}
+
+.blog-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.blog-title {
+  font-family: "Potta One", cursive;
+  color: #de4793;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.blog-description {
+  font-family: "Comic Sans MS", cursive;
+  color: #de4793;
+  font-size: 0.8rem;
+  margin-bottom: 15px;
+}
+
+.read-more-btn {
+  display: inline-block;
+  align-self: flex-end;
+  text-align: right;
+  color: white;
+  font-family: "Comic Sans MS", cursive;
+  font-size: 1rem;
+  padding: 6px 12px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.read-more-btn:hover {
+  background-image: url(images/pink-sparkles-bg.gif);
+}
+
+#blog-page-big-window {
+  background-color: rgba(255, 255, 255, 0.726);
+  background-image: none;
+  border-top: none;
+  height: 100%;
+  position: relative;
+  padding-bottom: 100px;
+}
+
+.mushroom-divider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+}
+
+.mushroom-divider img {
+  width: 300px;
+  margin-left: -14px;
+  margin-right: -14px;
+}
+
+/* CONTACT */
+#chat-box {
+  padding: 0;
+}
+#contact-window {
+  border: 3px solid #de4793;
+  background-image: url(images/contact-window.png);
+  background-size: cover;
+  height: 500px;
+}
+
+.header-img-container {
+  position: relative;
+  display: inline-block;
+}
+
+.sparkly-title {
+  position: absolute;
+  top: 40%;
+  left: 7%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1px;
+  z-index: 2;
+}
+
+.sparkly-title img {
+  height: 40px;
+}
+
+/* MY SOCIAL LINKS SECTION */
+.socials-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-left: 15px;
+}
+
+.social-icons img {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.05);
+}
+
+.main-gif img {
+  width: 200px;
+  height: 297px;
+  margin-left: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-top: 20px;
+}
+
+/*MY PROJECTS SECTION, GRID*/
+.projects-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  justify-items: center;
+}
+
+.project-card {
+  text-align: center;
+}
+
+.project-title {
+  font-family: "Potta One", cursive;
+  background-color: white;
+  font-size: 1.4rem;
+  margin-bottom: px;
+  color: #de4793;
+  border: 3px solid #de4793;
+  padding: 0.3rem;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-frame {
+  background-image: url("images/pink-sparkles-bg.gif");
+  background-size: cover;
+  padding: 15px;
+  display: inline-block;
+  border: 3px solid #de4793;
+  border-top: none;
+}
+
+.project-frame img {
+  width: 330px;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.project-frame img:hover {
+  transform: scale(1.02);
+}
